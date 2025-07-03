@@ -19,4 +19,6 @@ const PasswordSlider = () => {
 	);
 };
 
+// Changes
+
 export default PasswordSlider;
