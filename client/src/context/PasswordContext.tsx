@@ -12,12 +12,15 @@ type PasswordContextType = {
 	setNumbers: (val: boolean) => void;
 	symbols: boolean;
 	setSymbols: (val: boolean) => void;
+	passwordText: string;
+	setPasswordText: (val: string) => void;
 };
 
 const PasswordContext = createContext<PasswordContextType | undefined>(
 	undefined
 );
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const usePassword = () => {
 	const ctx = useContext(PasswordContext);
 	if (!ctx) throw new Error("usePassword must be use with PasswordProvider");
@@ -29,7 +32,8 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
 	const [upperCase, setUpperCase] = useState<boolean>(true);
 	const [lowerCase, setLowerCase] = useState<boolean>(true);
 	const [symbols, setSymbols] = useState<boolean>(false);
-	const [numbers, setNumbers] = useState<boolean>(false)
+	const [numbers, setNumbers] = useState<boolean>(false);
+	const [passwordText, setPasswordText] = useState<string>(" ");
 	return (
 		<PasswordContext.Provider
 			value={{
@@ -42,7 +46,9 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
 				symbols,
 				setSymbols,
 				numbers,
-				setNumbers
+				setNumbers,
+				passwordText,
+				setPasswordText,
 			}}
 		>
 			{children}

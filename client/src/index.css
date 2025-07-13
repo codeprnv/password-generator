@@ -1,10 +1,14 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
+.global-copy-cursor * {
+    cursor: url('/copy-icon.png'), auto !important;
+}
+
 @custom-variant dark (&:is(.dark *));
 
-@layer base{
-    body{
+@layer base {
+    body {
         @apply bg-black/90 w-screen h-screen overflow-x-hidden font-[outfit];
     }
 }
