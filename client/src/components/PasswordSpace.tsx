@@ -62,7 +62,7 @@ const PasswordSpace = () => {
 	};
 	return (
 		<div className="w-full h-1/7 md:h-1/5 bg-[#e6e3e1] my-4 rounded-3xl flex flex-col md:gap-1">
-			<div className="w-full h-full rounded-3xl bg-[#d4d1ce] flex items-center px-4 md:px-8 justify-between ">
+			<div className="w-full h-full rounded-3xl bg-[#d4d1ce] flex items-center p-4 md:px-8 justify-between ">
 				{/* password text */}
 				<div className="max-w-[50%]">
 					<input
@@ -71,7 +71,7 @@ const PasswordSpace = () => {
 						readOnly
 					/>
 				</div>
-				<div className="flex gap-2 md:gap-4 text-white ">
+				<div className="flex gap-2 md:gap-4 text-white items-center">
 					<button
 						id="copy-btn"
 						className="bg-[#282828] w-fit h-fit px-2 py-1 md:px-4 md:py-2 rounded-lg"
@@ -89,7 +89,7 @@ const PasswordSpace = () => {
 			</div>
 			{/* Dynamically generated based on password strength */}
 			<div
-				className={`w-full h-1/5  rounded-3xl ${color} ${bgcolor} flex justify-center text-[11px] md:text-sm`}
+				className={`w-full items-center md:h-1/3 rounded-3xl ${color} ${bgcolor} flex justify-center text-[12px] md:text-sm p-1 `}
 			>
 				<b>{label}:</b>&nbsp;{description}.
 			</div>
