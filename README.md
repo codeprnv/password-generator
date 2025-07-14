@@ -7,13 +7,14 @@ A small-scale full-stack password generator built with **React**, **Node.js**, a
 
 ## Table of Contents 📝
 
-- [Preview](#Preview)
-- [Features](#Features)
-- [Tech-Stack](#Tech-Stack)
-- [Project Structure](#Project-Structure)
-- [Installation](#Installation)
-- [API Reference](#API-Reference)
-- [Insights & Outcomes](#Insights & Outcomes)
+- [Preview](#Preview-)
+- [Features](#Features-)
+- [Tech-Stack](#Tech-Stack-)
+- [Project Structure](#Project-Structure-)
+- [Installation](#Installation-)
+- [API Reference](#API-Reference-)
+- [Insights & Outcomes](#Insights-&-Outcomes-)
+  
 ## Preview 📷
 
 ![Password-Generator](https://raw.githubusercontent.com/codeprnv/password-generator/master/client/src/assets/screenshot.png)
@@ -129,7 +130,7 @@ node index.js && cd .. && cd client && npm run dev
 ```
 
 
-## Insights & Outcomes 🧠 
+## Insights-&-Outcomes 🧠 
 
 ### 🔧 Problems Solved:
 - Implemented a custom password generation algorithm that guarantees inclusion of all selected character types (uppercase, lowercase, numbers, symbols).
